@@ -3,7 +3,7 @@ version: '2'
 services:
   apache:
     container_name: apache
-    build: .
+    image: rvolt/xdebug-phpunit:latest
     ports:
       - 4080:80
     volumes:
