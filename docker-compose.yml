@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  apache:
+    container_name: apache
+    build: .
+    ports:
+      - 4080:80
+    volumes:
+      - ./www:/var/www/html
+    restart: 'no'
+  
