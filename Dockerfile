@@ -48,4 +48,5 @@ COPY ./xdebug-phpunit.ini /usr/local/etc/php/conf.d/
 RUN chown -R 1000:1000 /var/www/html/
 RUN chmod -R 0777 /var/www/html/
 
+RUN php --version
 RUN phpunit --version
